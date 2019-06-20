@@ -10,7 +10,7 @@ timezone: Asia/Shanghai
 
 # custom Site settings
 SEOTitle: 笔记
-keyword: "java, python, 机器学习, 人工智能, 深度学习" # seo key words
+keyword: "java, python, 机器学习, 人工智能, 深度学习,抓爬 ,爬虫 , spider, clawler" # seo key words
 
 favicon: # your favicon png
 # custom end
@@ -26,7 +26,7 @@ permalink_defaults:
 footer:
 # Specify the date when the site was setup.
 # If not defined, current year will be used.
-  since: 2015
+  since: 2019
 
   # Icon between year and copyright info.
   # From: http://fontawesome.io/
@@ -34,12 +34,12 @@ footer:
   icon: heart
 
   # If not defined, will be used `author` from Hexo main config.
-  copyright:
+  copyright: ybbzbb
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
-  powered: true
+  powered: false
   # Theme & scheme info link (Theme - A-RSnippet).
-  theme: true
+  theme: false
 
   # -------------------------------------------------------------
   # Any custom text can be defined here.
@@ -50,14 +50,14 @@ footer:
 # ---------------------------------------------------------------
 menu:
   home: /
-  Tutorial: /tutorial/
-  LeetCode-category: /leetcode-category/
-  LeetCode-tag: /leetcode-tag/
-  archives: /archives/
-  tags: /tags/
-  projects: /portfolio-slim/
-  support: /support/
-  RSS: /atom.xml
+  About: /about/
+  # LeetCode-category: /leetcode-category/
+  # LeetCode-tag: /leetcode-tag/
+  # archives: /archives/
+  # tags: /tags/
+  # projects: /portfolio-slim/
+  # support: /support/
+  # RSS: /atom.xml
 
 # ---------------------------------------------------------------
 # SNS settings
@@ -71,9 +71,9 @@ rss:
 
 # email: xxx@gmail.com
 # weibo_username:
-# zhihu_username:
-github_username: huyingjie
-twitter_username: yingjieYJH
+zhihu_username: zheng-rui-24-72
+github_username: ybbzbb
+# twitter_username: yingjieYJH
 # facebook_username:
 # linkedin_username:
 
@@ -81,9 +81,9 @@ twitter_username: yingjieYJH
 # Sidebar settings
 # ---------------------------------------------------------------
 sidebar: true
-sidebar-about-description: data scientist
-sidebar-avatar-url: https://avatars3.githubusercontent.com/u/4664280?s=460&v=4
-sidebar-description-after-icons: <a href="https://www.patreon.com/arsnippet" target="_blank"><img src="/img/patreon.png" alt="support my work at patron"></a><br><br><a href="https://arsnippet.freeflarum.com/" target="_blank"><img src="/img/forum.jpg" alt="support my work at patron"></a><br><br><a href="https://discord.gg/CB6CPzq" target="_blank"><img src="/img/discord.png" alt="Join the Discord"></a>
+sidebar-about-description: java 小爬虫，目前正在进军机器学习!
+sidebar-avatar-url: https://github.com/ybbzbb/ybbzbb.github.io/blob/blog-src/source/images/head.png?raw=true
+# sidebar-description-after-icons: <a href="https://www.patreon.com/arsnippet" target="_blank"><img src="/img/patreon.png" alt="support my work at patron"></a><br><br><a href="https://arsnippet.freeflarum.com/" target="_blank"><img src="/img/forum.jpg" alt="support my work at patron"></a><br><br><a href="https://discord.gg/CB6CPzq" target="_blank"><img src="/img/discord.png" alt="Join the Discord"></a>
 
 # ---------------------------------------------------------------
 # Hexo official settings
@@ -156,10 +156,10 @@ post_update_date_enable: true
 
 # Can contain HTML
 # Appear at the begginning of the post
-content_before_post: <div class="subscribe"><a href="http://eepurl.com/dh6iCD" target="_blank">Get Updated for Each Release!</a></div><p>
+# content_before_post: <div class="subscribe"><a href="http://eepurl.com/dh6iCD" target="_blank">Get Updated for Each Release!</a></div><p>
 # Can contain HTML
 # Appear at the end of the post
-content_after_post: <a href="https://www.patreon.com/arsnippet" target="_blank"><img src="/img/patreon.png" alt="support my work at patron"></a> <a href="https://arsnippet.freeflarum.com/" target="_blank"><img src="/img/forum.jpg" alt="support my work at patron"></a> <a href="https://discord.gg/CB6CPzq" target="_blank"><img src="/img/discord.png" alt="Join the Discord"></a>
+# content_after_post: <a href="https://www.patreon.com/arsnippet" target="_blank"><img src="/img/patreon.png" alt="support my work at patron"></a> <a href="https://arsnippet.freeflarum.com/" target="_blank"><img src="/img/forum.jpg" alt="support my work at patron"></a> <a href="https://discord.gg/CB6CPzq" target="_blank"><img src="/img/discord.png" alt="Join the Discord"></a>
 
 # default cover image
 # example: animated gif as header
@@ -253,7 +253,7 @@ yandex_site_verification:
 # ---------------------------------------------------------------
 # Share
 # ---------------------------------------------------------------
-add_this_id: ra-5272bc2a7b3c1ddc
+# add_this_id: ra-5272bc2a7b3c1ddc
 # Enable/Disable Update date
 
 # ---------------------------------------------------------------
