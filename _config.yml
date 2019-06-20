@@ -138,7 +138,7 @@ theme: a-rsnippet
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:ybbzbb/ybbzbb.github.io.git
+  repo: https://github.com/ybbzbb/ybbzbb.github.io.git
   branch: master
 
 
