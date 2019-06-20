@@ -82,7 +82,7 @@ github_username: ybbzbb
 # ---------------------------------------------------------------
 sidebar: true
 sidebar-about-description: java 小爬虫，目前正在进军机器学习!
-sidebar-avatar-url: https://github.com/ybbzbb/ybbzbb.github.io/blob/blog-src/source/images/head.png?raw=true
+sidebar-avatar-url: /images/head.png
 # sidebar-description-after-icons: <a href="https://www.patreon.com/arsnippet" target="_blank"><img src="/img/patreon.png" alt="support my work at patron"></a><br><br><a href="https://arsnippet.freeflarum.com/" target="_blank"><img src="/img/forum.jpg" alt="support my work at patron"></a><br><br><a href="https://discord.gg/CB6CPzq" target="_blank"><img src="/img/discord.png" alt="Join the Discord"></a>
 
 # ---------------------------------------------------------------
@@ -163,7 +163,7 @@ post_update_date_enable: true
 
 # default cover image
 # example: animated gif as header
-cover_default_img: /img/sky-clouds-moon-horizon.jpg?h=350&auto=compress&cs=tinysrgb
+# cover_default_img: /img/sky-clouds-moon-horizon.jpg?h=350&auto=compress&cs=tinysrgb
 
 
 # Table Of Contents in the Sidebar
