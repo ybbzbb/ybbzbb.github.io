@@ -1,9 +1,6 @@
 ---
-title: about
-date: 2019-06-20 15:51:47
-tags: me
-cover_img: /about/cover_img.png
-categories: 简历
+title: about 简历
+cover_img: /about/index/cover_img.png
 ---
 
 ## 关于我
