@@ -5,7 +5,8 @@ tags:
     - mysql
 categories:
     - 运维
-date: 2019-06-21 15:35:47
+date: 2019-06-21
+id: devops001
 ---
 
 # mysql5.7x 解压版安装
@@ -14,7 +15,7 @@ date: 2019-06-21 15:35:47
 
 打开 [历史地址](https://downloads.mysql.com/archives/community/) ,找到对应的 5.7x 版本下载。
 
-![下载](mysql5-7x安装/下载.png)
+{% asset_img download.png %}
 
 ## 安装
 
@@ -23,11 +24,12 @@ date: 2019-06-21 15:35:47
 ```shell
 mysqld --initialize --user=mysql --console
 ```
-![初始化](mysql5-7x安装/初始化.png)
+{% asset_img init.png %}
 
 ### 安装服务
 使用命令 **mysqld install MySQL**，出现 *Service successfully installed.* 表示安装成功
-![安装](mysql5-7x安装/安装.png)
+
+{% asset_img insert.png %}
 
 ### 配置信息
 进入mysql 的根目录我们可以看到生成了 **data** 目录,在根目录中新建文件**my.ini**
@@ -62,5 +64,5 @@ update mysql.user set authentication_string=password('you pwd') where user='root
 
 ## 常见错误
 1. 由于找不到 MSVCP120.dll
-![下载](mysql5-7x安装/找不到dll.png)
+{% asset_img not-find-dll.png %}
 > 搜索 **微软常用运行库合集64位**  进行安装
