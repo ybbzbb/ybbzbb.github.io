@@ -1,7 +1,13 @@
-.DS_Store
-Thumbs.db
-db.json
-*.log
+# ignore
 node_modules/
+.deploy_git/
 public/
-.deploy*/
+*.log
+db.json
+package-lock.json
+
+themes/next/source/sell/
+themes/next/source/music/
+themes/next/source/neveryu/
+themes/next/source/vue-tour/
+themes/next/source/my-example/
