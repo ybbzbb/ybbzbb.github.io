@@ -7,6 +7,7 @@ categories:
     - 运维
 date: 2019-06-21
 id: devops001
+comments: true
 ---
 
 # mysql5.7x 解压版安装
