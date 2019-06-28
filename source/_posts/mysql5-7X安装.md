@@ -1,13 +1,12 @@
 ---
 title: mysql5.7x 解压版安装
 tags: 
-    - 运维 
-    - mysql
+    - mysql5.7x 
+    - 安装
 categories:
     - 运维
 date: 2019-06-21
 id: devops001
-comments: true
 ---
 
 # mysql5.7x 解压版安装
