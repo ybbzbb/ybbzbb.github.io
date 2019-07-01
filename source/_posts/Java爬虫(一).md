@@ -4,7 +4,7 @@ tags:
     - 爬虫
     - java
 categories:
-    - 爬虫
+    - java爬虫-微博
 id: crawler001
 ---
 
