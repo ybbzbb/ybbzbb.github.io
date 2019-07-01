@@ -96,7 +96,7 @@ menu:
   archives: /archives/ || archive
   # categories: /categories/ || th
   about: /about/index.html || user
-  #tags: /tags/ || tags
+  # tags: /tags/ || tags
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -126,8 +126,9 @@ scheme: Pisces
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  #GitHub: https://github.com/yourname || github
+social:
+  GitHub: https://github.com/ybbzbb || github
+  # ZhiHu: https://www.zhihu.com/people/ybbzbb || zhihu
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
