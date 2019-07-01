@@ -116,4 +116,8 @@ public class SimpleRequestTest {
 }
 ```
 
+运行结果
+
+{% asset_img result.png %}
+
 
