@@ -11,29 +11,28 @@ id: devops001
 
 # mysql5.7x 解压版安装
 
-## 下载安装包
+## 一、下载安装包
 
-打开 [历史地址](https://downloads.mysql.com/archives/community/) ,找到对应的 5.7x 版本下载。
+打开 [历史地址](https://downloads.mysql.com/archives/community/) ,找到对应的 5.7x 版本。
 
 {% asset_img download.png %}
 
-## 安装
+## 二、安装
 
-### 初始化配置
-**win + X** 以管理得权限 PowerShell ,进入解压目录使用初始化命令
+### 2.1 初始化配置
+**win + X** 以管理员的权限打开 PowerShell ,进入解压目录，使用初始化命令
 ```shell
 mysqld --initialize --user=mysql --console
 ```
 {% asset_img init.png %}
 
-### 安装服务
-使用命令 **mysqld install MySQL**，出现 *Service successfully installed.* 表示安装成功
+### 2.2 安装服务
+使用**mysqld install MySQL**命令，出现 *Service successfully installed.* 符号，则表示安装成功
 
 {% asset_img insert.png %}
 
-### 配置信息
-进入mysql 的根目录我们可以看到生成了 **data** 目录,在根目录中新建文件**my.ini**
-写入配置文件
+### 2.3 配置信息
+进入mysql 安装的根目录，可以看到生成了 **data** 目录,在根目录中新建文件**my.ini**写入配置信息
 ```config
 [mysqld]
 character-set-server=utf8
@@ -50,19 +49,18 @@ max_connections=200
 #免密登录
 skip_grant_tables
 ```
-注意要使用 **\\\\** 双斜杠
+* 注意要使用 \\ 双斜杠 *
 
-使用 **net start mysql** 启动服务
+使用 **net start mysql** 命令启动服务
 
-## 修改密码
-登录帐号 *mysql -uroot -proot* , 因为上面配置了**skip_grant_tables**可以随意输入密码。
-修改密码
+## 三、 修改密码
+登录帐号 *mysql -uroot -proot* , 因为 **配置信息** 配置了**skip_grant_tables**命令，所以可以随意输入密码进入管理。
 ```sql
 update mysql.user set authentication_string=password('you pwd') where user='root' and Host = 'localhost';
 ```
-屏蔽 **skip_grant_tables**,重启服务
+将配置文件中的 **skip_grant_tables** 行，进行注释。然后重启服务。
 
-## 常见错误
+## 四、常见错误
 1. 由于找不到 MSVCP120.dll
 {% asset_img not-find-dll.png %}
 > 搜索 **微软常用运行库合集64位**  进行安装
