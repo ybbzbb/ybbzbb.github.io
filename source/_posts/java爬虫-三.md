@@ -1,13 +1,15 @@
 ---
 title: java爬虫(三)-让爬虫加上翅膀多线程
-tags: 
-    - 爬虫
-    - java
+tags:
+  - 爬虫
+  - java
 categories:
-    - java爬虫-微博
-keywords: java爬虫,微博爬虫,spider,crawl
+  - java爬虫-微博
+keywords: 'java爬虫,微博爬虫,spider,crawl'
 id: crawler003
+date: 2019-08-12 15:03:24
 ---
+
 
 # java爬虫(三)-让爬虫加上翅膀多线程
 
@@ -61,6 +63,7 @@ public class Spider {
 
     public void run(Deque<Integer> tasks , int poolNumber) {
 
+        
         final ExecutorService executorService = Executors.newFixedThreadPool(poolNumber);
         stat.set(STAT_RUNNING);
 
@@ -141,7 +144,7 @@ public class Spider {
 如何使用多线程让系统到达最高的抓爬速率，是很难的。这里要考虑到:
 1. 软件的可靠性
 2. 硬件的性能
-3. 针对硬件的配置。
+3. 针对硬件的配置
 
 软件的可靠性，是文章系列的重点，同时也会说明一些针对于硬件的配置。
 
