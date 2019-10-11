@@ -4,6 +4,10 @@ date: 2019-09-18 10:48:38
 tags: 
     - amazon
     - advertising
+categories:
+  - data
+id: data001
+keywords: 'amazon,ad,advertising,api,文档'
 ---
 
 # amazon-advertising-API接口文档
