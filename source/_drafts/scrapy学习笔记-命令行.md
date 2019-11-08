@@ -212,8 +212,62 @@ spider1
 spider2
 ```
 
+### edit
+    语法: scrapy edit <spider>
+    是否需要项目: yes
 
 
+
+```
+$ scrapy edit spider1
+```
+
+### fetch
+    语法: scrapy fetch <url>
+    是否需要项目: no
+
+使用 scrapy 下载程序的指定url ， 并将内容写入标准输出
+展示了爬虫下载连接的过程，如果用户使用了代理，这个命令也会使用到。
+所以可以用这个命令来查看 spider 是如何获取特定的页面。
+在项目外部使用，不会有任何特定的行文，它是使用默认的 是插入俺朋友 下载程序设置。
+
+支持的选项:
+. --spider=SPIDER 绕过自定检查，并强制使用特定的蜘蛛
+. --headers 打印响应的http头文件，不显示正文
+. --no-redirect 不遵循 http 3XX 重定向(默认遵循)
+
+Usage examples:
+```
+$ scrapy fetch --nolog http://www.example.com/some/page.html
+[ ... html content here ... ]
+
+$ scrapy fetch --nolog --headers http://www.example.com/
+{'Accept-Ranges': ['bytes'],
+ 'Age': ['1263   '],
+ 'Connection': ['close     '],
+ 'Content-Length': ['596'],
+ 'Content-Type': ['text/html; charset=UTF-8'],
+ 'Date': ['Wed, 18 Aug 2010 23:59:46 GMT'],
+ 'Etag': ['"573c1-254-48c9c87349680"'],
+ 'Last-Modified': ['Fri, 30 Jul 2010 15:30:18 GMT'],
+ 'Server': ['Apache/2.2.3 (CentOS)']}
+```
+
+### view
+    语法: scrapy view <url>
+    是否需要项目: no
+
+使用爬虫的抓下来页面，并展示在浏览器中。
+PS: 查看页面是否被反抓爬，查看页面数据是否返回正确 等。
+
+. --spider=SPIDER 绕过自定检查，并强制使用特定的蜘蛛
+. --headers 打印响应的http头文件，不显示正文
+
+Usage example:
+```
+$ scrapy view http://www.example.com/some/page.html
+[ ... browser starts ... ]
+```
 
 ## 环境参数说明
 
