@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://ybbzbb.github.io/about/index.html</loc>
+    
+    <lastmod>2020-11-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ybbzbb.github.io/index.html</loc>
+    
+    <lastmod>2020-05-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ybbzbb.github.io/2019/09/18/data001/</loc>
+    
+    <lastmod>2020-05-19</lastmod>
+    
+  </url>
+  
+
+  <url>
+    <loc>https://ybbzbb.github.io/</loc>
+    <lastmod>2020-11-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://ybbzbb.github.io/tags/amazon/</loc>
+    <lastmod>2020-11-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ybbzbb.github.io/tags/advertising/</loc>
+    <lastmod>2020-11-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  
+  <url>
+    <loc>https://ybbzbb.github.io/categories/data/</loc>
+    <lastmod>2020-11-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+</urlset>
