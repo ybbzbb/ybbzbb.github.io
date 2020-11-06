@@ -6,7 +6,7 @@
 title: ybbzbb's blog
 subtitle: blog
 description: 只是做一些笔记
-keywords: java, python, 机器学习, 人工智能, 深度学习,抓爬 ,爬虫 , spider, clawler
+keywords: java, python, 机器学习, 人工智能, 深度学习,抓爬 ,爬虫 , spider, clawler ,amazon ,jd ,亚马逊
 author: ybbzbb
 language: zh-Hans
 timezone: Asia/Shanghai
@@ -75,7 +75,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: next-reloaded
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
