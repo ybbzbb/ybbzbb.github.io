@@ -195,7 +195,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-11-18 15:09:10" itemprop="dateModified" datetime="2020-11-18T15:09:10+08:00">2020-11-18</time>
+                <time title="Modified: 2020-11-18 15:22:32" itemprop="dateModified" datetime="2020-11-18T15:22:32+08:00">2020-11-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -219,7 +219,7 @@
 
       
           <h1 id="amazon-spide（邮编请求）"><a href="#amazon-spide（邮编请求）" class="headerlink" title="amazon spide（邮编请求）"></a>amazon spide（邮编请求）</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><blockquote>
-<p>amazon 使用关键词搜索的过程中，会将不发货到默认地址（本级IP）的商品剔除。这样的爬虫数据没有意义，运营人员需要获取当地用户的视角，来判断商品目前的价值。</p>
+<p>amazon 使用关键词搜索的过程中，会将不发货到默认地址（本地IP）的商品剔除。这样的爬虫数据没有意义，运营人员需要获取当地用户的视角，来判断商品目前的价值。</p>
 </blockquote>
 <p>数据对比，可以看到商品信息和广告信息都是不一样的。</p>
 <blockquote>
@@ -263,7 +263,7 @@
 <blockquote>
 <p>cookie中并没有相关邮编信息，我们初步判断邮编信息是在 session中。<br><strong>删除 session-id</strong> 的值，然后刷新页面查看数据，果然邮编就恢复到了默认的IP地址，可以确定 邮编信息是在session 中。</p>
 </blockquote>
-<p>通过F12查看如何获取session，确定获取数据的流程：<br><img src="%E9%82%AE%E6%94%BF%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E8%AE%BE%E8%AE%A1.jpg" alt="邮政信息获取设计"></p>
+<p>通过F12查看浏览器如何获取session，程序的流程：<br><img src="%E9%82%AE%E6%94%BF%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E8%AE%BE%E8%AE%A1.jpg" alt="邮政信息获取设计"></p>
 <p>最后持有session和代理请求出来的页面，就是相对应的站点数据。</p>
 <h2 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h2><ol>
 <li>使用的<strong>代理</strong>最好是高质量的私密代理</li>
