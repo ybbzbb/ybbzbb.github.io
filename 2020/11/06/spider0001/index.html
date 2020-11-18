@@ -20,21 +20,28 @@
     var CONFIG = {"hostname":"ybbzbb.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="amazon-advertising-API接口文档 最近一段时间需要将Amazon的广告系统嵌入到公司系统中，所以整理了一套关于广告系统的API文档。  点击下载 ps: 如果有什么遗漏，欢迎讨论哦">
+  <meta name="description" content="amazon spide（邮编请求）背景 amazon 使用关键词搜索的过程中，会将不发货到默认地址（本级IP）的商品剔除。这样的爬虫数据没有意义，运营人员需要获取当地用户的视角，来判断商品目前的价值。  数据对比，可以看到商品信息和广告信息都是不一样的。  美国邮编下的展示   中国收货地址的展示  解决方案 两种不需要用户登陆的解决方式。     方法 优点 缺点    使用当地IP 不需要修">
 <meta property="og:type" content="article">
-<meta property="og:title" content="amazon-advertising-API接口文档">
-<meta property="og:url" content="https://ybbzbb.github.io/2019/09/18/data001/index.html">
+<meta property="og:title" content="amazon spide（邮编请求）">
+<meta property="og:url" content="https://ybbzbb.github.io/2020/11/06/spider0001/index.html">
 <meta property="og:site_name" content="ybbzbb&#39;s blog">
-<meta property="og:description" content="amazon-advertising-API接口文档 最近一段时间需要将Amazon的广告系统嵌入到公司系统中，所以整理了一套关于广告系统的API文档。  点击下载 ps: 如果有什么遗漏，欢迎讨论哦">
+<meta property="og:description" content="amazon spide（邮编请求）背景 amazon 使用关键词搜索的过程中，会将不发货到默认地址（本级IP）的商品剔除。这样的爬虫数据没有意义，运营人员需要获取当地用户的视角，来判断商品目前的价值。  数据对比，可以看到商品信息和广告信息都是不一样的。  美国邮编下的展示   中国收货地址的展示  解决方案 两种不需要用户登陆的解决方式。     方法 优点 缺点    使用当地IP 不需要修">
 <meta property="og:locale">
-<meta property="article:published_time" content="2019-09-18T02:48:38.000Z">
-<meta property="article:modified_time" content="2020-05-19T06:25:21.526Z">
+<meta property="og:image" content="https://ybbzbb.github.io/2020/11/06/spider0001/1604646349462.jpg">
+<meta property="og:image" content="https://ybbzbb.github.io/2020/11/06/spider0001/1604646491996.jpg">
+<meta property="og:image" content="https://ybbzbb.github.io/2020/11/06/spider0001/1604645900300.jpg">
+<meta property="og:image" content="https://ybbzbb.github.io/2020/11/06/spider0001/1604647213316.jpg">
+<meta property="og:image" content="https://ybbzbb.github.io/2020/11/06/spider0001/%E9%82%AE%E6%94%BF%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E8%AE%BE%E8%AE%A1.jpg">
+<meta property="article:published_time" content="2020-11-06T06:30:39.000Z">
+<meta property="article:modified_time" content="2020-11-18T07:01:48.407Z">
 <meta property="article:author" content="ybbzbb">
 <meta property="article:tag" content="amazon">
-<meta property="article:tag" content="advertising">
+<meta property="article:tag" content="spider">
+<meta property="article:tag" content="zipCode">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ybbzbb.github.io/2020/11/06/spider0001/1604646349462.jpg">
 
-<link rel="canonical" href="https://ybbzbb.github.io/2019/09/18/data001/">
+<link rel="canonical" href="https://ybbzbb.github.io/2020/11/06/spider0001/">
 
 
 <script id="page-configurations">
@@ -47,7 +54,7 @@
   };
 </script>
 
-  <title>amazon-advertising-API接口文档 | ybbzbb's blog</title>
+  <title>amazon spide（邮编请求） | ybbzbb's blog</title>
   
 
 
@@ -168,7 +175,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="https://ybbzbb.github.io/2019/09/18/data001/">
+    <link itemprop="mainEntityOfPage" href="https://ybbzbb.github.io/2020/11/06/spider0001/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -181,7 +188,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          amazon-advertising-API接口文档
+          amazon spide（邮编请求）
         </h1>
 
         <div class="post-meta">
@@ -191,14 +198,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2019-09-18 10:48:38" itemprop="dateCreated datePublished" datetime="2019-09-18T10:48:38+08:00">2019-09-18</time>
+              <time title="Created: 2020-11-06 14:30:39" itemprop="dateCreated datePublished" datetime="2020-11-06T14:30:39+08:00">2020-11-06</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-19 14:25:21" itemprop="dateModified" datetime="2020-05-19T14:25:21+08:00">2020-05-19</time>
+                <time title="Modified: 2020-11-18 15:01:48" itemprop="dateModified" datetime="2020-11-18T15:01:48+08:00">2020-11-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -206,7 +213,7 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/data/" itemprop="url" rel="index"><span itemprop="name">data</span></a>
+                  <a href="/categories/spider/" itemprop="url" rel="index"><span itemprop="name">spider</span></a>
                 </span>
             </span>
 
@@ -221,11 +228,52 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="amazon-advertising-API接口文档"><a href="#amazon-advertising-API接口文档" class="headerlink" title="amazon-advertising-API接口文档"></a>amazon-advertising-API接口文档</h1><blockquote>
-<p>最近一段时间需要将Amazon的广告系统嵌入到公司系统中，所以整理了一套关于广告系统的API文档。</p>
+        <h1 id="amazon-spide（邮编请求）"><a href="#amazon-spide（邮编请求）" class="headerlink" title="amazon spide（邮编请求）"></a>amazon spide（邮编请求）</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><blockquote>
+<p>amazon 使用关键词搜索的过程中，会将不发货到默认地址（本级IP）的商品剔除。这样的爬虫数据没有意义，运营人员需要获取当地用户的视角，来判断商品目前的价值。</p>
 </blockquote>
-<p><a href="/dounload/amazonAdvertisingAPI%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3130.docx" title="文件下载">点击下载</a></p>
-<p>ps: 如果有什么遗漏，欢迎讨论哦</p>
+<p>数据对比，可以看到商品信息和广告信息都是不一样的。</p>
+<blockquote>
+<p>美国邮编下的展示<br><img src="1604646349462.jpg" alt="数据对比 美国邮编"></p>
+</blockquote>
+<blockquote>
+<p>中国收货地址的展示<br><img src="1604646491996.jpg" alt="数据对比 中国邮编"></p>
+</blockquote>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><blockquote>
+<p>两种不需要用户登陆的解决方式。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th align="left">优点</th>
+<th align="left">缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>使用当地IP</td>
+<td align="left">不需要修改爬虫任务</td>
+<td align="left">爬虫部署复杂 <br> 对应成本增加</td>
+</tr>
+<tr>
+<td><strong><em>使用IP绑定session</em></strong></td>
+<td align="left">需要增加爬虫前置逻辑 <br> 增加邮编检查 </br></td>
+<td align="left">成本低</td>
+</tr>
+</tbody></table>
+<h2 id="编写程序"><a href="#编写程序" class="headerlink" title="编写程序"></a>编写程序</h2><blockquote>
+<p>下面会讲解如何使用IP 去绑定session ,并请求相关数据。</p>
+</blockquote>
+<h3 id="用户如何处理"><a href="#用户如何处理" class="headerlink" title="用户如何处理"></a>用户如何处理</h3><blockquote>
+<p>首先我们需要知道用户是如何操作的。以 US 站点为例，以用户的方式设置邮编为 <strong>10010</strong><br><img src="1604645900300.jpg" alt="确定邮编"></p>
+</blockquote>
+<h3 id="判断"><a href="#判断" class="headerlink" title="判断"></a>判断</h3><blockquote>
+<p>用户在<strong>没有登陆</strong>的情况下选择了邮编，获取就是当地数据。那么这个邮编信息要么是在cookie（本地），要么是在session （亚马逊服务器）中。</p>
+</blockquote>
+<p><img src="1604647213316.jpg" alt="cookie 信息"></p>
+<blockquote>
+<p>cookie中并没有相关邮编信息，我们初步判断邮编信息是在 session中。<br><strong>删除 session-id</strong> 的值，然后刷新页面查看数据，果然邮编就恢复到了默认的IP地址，可以确定 邮编信息是在session 中。</p>
+</blockquote>
+<p>确定获取数据的流程：<br><img src="%E9%82%AE%E6%94%BF%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E8%AE%BE%E8%AE%A1.jpg" alt="邮政信息获取设计"></p>
 
     </div>
 
@@ -236,7 +284,8 @@
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/amazon/" rel="tag"># amazon</a>
-              <a href="/tags/advertising/" rel="tag"># advertising</a>
+              <a href="/tags/spider/" rel="tag"># spider</a>
+              <a href="/tags/zipCode/" rel="tag"># zipCode</a>
           </div>
 
         
@@ -244,11 +293,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2020/11/06/spider0001/" rel="next" title="amazon spide（邮编请求）">
-      amazon spide（邮编请求） <i class="fa fa-chevron-right"></i>
+    <a href="/2019/09/18/data001/" rel="prev" title="amazon-advertising-API接口文档">
+      <i class="fa fa-chevron-left"></i> amazon-advertising-API接口文档
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -307,7 +356,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#amazon-advertising-API%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3"><span class="nav-number">1.</span> <span class="nav-text">amazon-advertising-API接口文档</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#amazon-spide%EF%BC%88%E9%82%AE%E7%BC%96%E8%AF%B7%E6%B1%82%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">amazon spide（邮编请求）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">1.1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="nav-number">1.2.</span> <span class="nav-text">解决方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E5%86%99%E7%A8%8B%E5%BA%8F"><span class="nav-number">1.3.</span> <span class="nav-text">编写程序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%A8%E6%88%B7%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86"><span class="nav-number">1.3.1.</span> <span class="nav-text">用户如何处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A4%E6%96%AD"><span class="nav-number">1.3.2.</span> <span class="nav-text">判断</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

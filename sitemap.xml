@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ybbzbb.github.io/2020/11/06/spider0001/</loc>
+    
+    <lastmod>2020-11-18</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ybbzbb.github.io/about/index.html</loc>
     
     <lastmod>2020-11-06</lastmod>
@@ -25,7 +32,7 @@
 
   <url>
     <loc>https://ybbzbb.github.io/</loc>
-    <lastmod>2020-11-06</lastmod>
+    <lastmod>2020-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -33,14 +40,28 @@
   
   <url>
     <loc>https://ybbzbb.github.io/tags/amazon/</loc>
-    <lastmod>2020-11-06</lastmod>
+    <lastmod>2020-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://ybbzbb.github.io/tags/advertising/</loc>
-    <lastmod>2020-11-06</lastmod>
+    <lastmod>2020-11-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ybbzbb.github.io/tags/spider/</loc>
+    <lastmod>2020-11-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ybbzbb.github.io/tags/zipCode/</loc>
+    <lastmod>2020-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -49,7 +70,14 @@
   
   <url>
     <loc>https://ybbzbb.github.io/categories/data/</loc>
-    <lastmod>2020-11-06</lastmod>
+    <lastmod>2020-11-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ybbzbb.github.io/categories/spider/</loc>
+    <lastmod>2020-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
